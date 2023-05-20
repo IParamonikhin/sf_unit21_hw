@@ -27,7 +27,6 @@ class CustomView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .clear
         setCustomView()
     }
     
@@ -60,8 +59,9 @@ class CustomView: UIView {
     }
     
     func setCustomView() {
+        self.backgroundColor = .clear
         workingView = getFromXib()
-        cornerRadius(self)
+//        cornerRadius(self)
         cornerRadius(workingView)
         workingView.frame = bounds
         workingView.autoresizingMask = [.flexibleWidth, .flexibleHeight]

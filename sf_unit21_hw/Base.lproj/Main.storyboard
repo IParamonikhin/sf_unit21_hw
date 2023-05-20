@@ -20,21 +20,116 @@
                                 <rect key="frame" x="287" y="670" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="F0I-lY-eal" appends="YES" id="9OC-ji-XTs"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MHg-09-TIE" customClass="CustomView" customModule="sf_unit21_hw" customModuleProvider="target">
+                                <rect key="frame" x="153" y="677" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="wEg-25-7Ut" appends="YES" id="eY2-Qq-gU7"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vXs-6b-g1b" customClass="CustomView" customModule="sf_unit21_hw" customModuleProvider="target">
+                                <rect key="frame" x="198" y="338" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hlk-uf-f6R" appends="YES" id="ybi-JE-gd1"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sbH-d2-cM6" customClass="CustomView" customModule="sf_unit21_hw" customModuleProvider="target">
+                                <rect key="frame" x="31" y="587" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ocn-Jg-9MP" appends="YES" id="TLv-wZ-NPM"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kes-GY-a1J" customClass="CustomView" customModule="sf_unit21_hw" customModuleProvider="target">
+                                <rect key="frame" x="119" y="458" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="uew-Pe-CI1" appends="YES" id="acK-eW-Exd"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zOi-JI-pTn" customClass="CustomView" customModule="sf_unit21_hw" customModuleProvider="target">
+                                <rect key="frame" x="257" y="469" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="AML-hX-aGX" appends="YES" id="eKg-b1-cks"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SMT-RN-3wH" customClass="CustomView" customModule="sf_unit21_hw" customModuleProvider="target">
+                                <rect key="frame" x="49" y="314" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="2Lj-5V-MVq" appends="YES" id="i0T-rR-tUA"/>
+                                </connections>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                         <gestureRecognizers/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="HXY-iI-Mb3" appends="YES" id="hts-vk-Tc3"/>
-                        </connections>
                     </view>
                     <connections>
-                        <outlet property="panOutlet" destination="HXY-iI-Mb3" id="ANK-TO-ebS"/>
+                        <outlet property="elementViewFive" destination="sbH-d2-cM6" id="gae-YK-mQt"/>
+                        <outlet property="elementViewFour" destination="zOi-JI-pTn" id="O8t-vX-2zJ"/>
+                        <outlet property="elementViewOne" destination="SMT-RN-3wH" id="L00-U9-vhQ"/>
+                        <outlet property="elementViewSeven" destination="3sp-q0-TqB" id="XGR-Hw-KnM"/>
+                        <outlet property="elementViewSix" destination="MHg-09-TIE" id="bYb-Ef-AhX"/>
+                        <outlet property="elementViewThree" destination="Kes-GY-a1J" id="eFC-Rn-Oq3"/>
+                        <outlet property="elementViewTwo" destination="vXs-6b-g1b" id="LaL-yT-uIN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="HXY-iI-Mb3"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="2Lj-5V-MVq">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="wz6-9z-7HP"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="hlk-uf-f6R">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="04H-Vc-8sz"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="uew-Pe-CI1">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="4YD-qu-fV9"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="AML-hX-aGX">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="Eed-FO-Fku"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ocn-Jg-9MP">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="fYe-hG-5so"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="wEg-25-7Ut">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="biB-dX-b8f"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="F0I-lY-eal">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="FqY-lO-o7q"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="139" y="-2"/>
         </scene>

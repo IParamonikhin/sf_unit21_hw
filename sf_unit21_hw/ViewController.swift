@@ -9,22 +9,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var panOutlet: UIPanGestureRecognizer!
+    @IBOutlet weak var elementViewOne: CustomView!
+    @IBOutlet weak var elementViewTwo: CustomView!
+    @IBOutlet weak var elementViewThree: CustomView!
+    @IBOutlet weak var elementViewFour: CustomView!
+    @IBOutlet weak var elementViewFive: CustomView!
+    @IBOutlet weak var elementViewSix: CustomView!
+    @IBOutlet weak var elementViewSeven: CustomView!
     
 
     var customViewArray = [CustomView]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        for index in 0...6{
-            let newCustomViewElement: CustomView = CustomView(frame: CGRect(x: 10, y: 100 + 100 * index, width: 90, height: 90))
-            customViewArray.append(newCustomViewElement)
-            let panAction = UIPanGestureRecognizer(target: self, action: #selector(panAction))
-            customViewArray[index].addGestureRecognizer(panAction)
-            view.addSubview(customViewArray[index])
+        customViewArray.append(elementViewOne)
+        customViewArray.append(elementViewTwo)
+        customViewArray.append(elementViewThree)
+        customViewArray.append(elementViewFour)
+        customViewArray.append(elementViewFive)
+        customViewArray.append(elementViewSix)
+        customViewArray.append(elementViewSeven)
         }
-    }
+    
 
     @IBAction func panAction(_ gesture: UIPanGestureRecognizer) {
         var isBig: Bool = false
@@ -34,9 +40,9 @@ class ViewController: UIViewController {
         }
 
         let gestureTranslation = gesture.translation(in: view)
-        
+
         guard let gestureView = gesture.view else { return }
-        
+
         for index in 0...customViewArray.count - 1{
             if gestureView == customViewArray[index]{
                 if customViewArray[index].isBig{
@@ -45,12 +51,13 @@ class ViewController: UIViewController {
             }
         }
         gestureView.center = CGPoint(x: gestureView.center.x + gestureTranslation.x, y: gestureView.center.y + gestureTranslation.y)
+        
         for index in 0...customViewArray.count - 1{
             var capture: Capture = Capture(x: false, y: false)
             let enemyView = customViewArray[index]
             if !enemyView.isBig && !enemyView.isHidden && !isBig{
                 if gestureView != enemyView{
-                    
+
                     for value in Int(enemyView.frame.minY)...Int(enemyView.frame.maxY) {
                         if Int(gestureView.center.y) == value {
                             capture.y = true
@@ -61,7 +68,7 @@ class ViewController: UIViewController {
                             capture.x = true
                         }
                     }
-                    
+
                     if capture.x && capture.y{
                         enemyView.doBigger()
                         enemyView.setBackgroundColor = .systemIndigo
@@ -74,10 +81,10 @@ class ViewController: UIViewController {
             }
         }
         gesture.setTranslation(.zero, in: view)
-        
+
         guard gesture.state == .ended else { return }
-        
-        
+
+
     }
     
 }

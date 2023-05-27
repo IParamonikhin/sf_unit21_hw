@@ -48,10 +48,20 @@ class CustomView: UIView {
     }
     
     func doBigger() {
-        workingView.frame = CGRect(x: workingView.frame.minX,
-                                   y: workingView.frame.minY, width: workingView.frame.width + 30,
-                                   height: workingView.frame.height + 30)
-        cornerRadius(workingView)
+//        workingView.frame = CGRect(x: workingView.frame.minX,
+//                                   y: workingView.frame.minY, width: workingView.frame.width + 30,
+//                                   height: workingView.frame.height + 30)
+//        cornerRadius(workingView)
+        
+        UIView.animate(withDuration: 1, delay: 0,options: .curveLinear) {
+            [self] in
+            workingView.frame = CGRect(x: workingView.frame.minX, y: workingView.frame.minY, width: workingView.frame.width + 30, height: workingView.frame.height + 30)
+            cornerRadius(workingView)
+            workingView.backgroundColor = .systemIndigo
+        }
+        
+        
+        
     }
     
     func cornerRadius(_ view: UIView) {

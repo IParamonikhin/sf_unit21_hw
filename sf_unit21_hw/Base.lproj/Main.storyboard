@@ -16,18 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3sp-q0-TqB" customClass="CustomView" customModule="sf_unit21_hw" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3sp-q0-TqB" customClass="CustomView" customModule="sf_unit21_hw" customModuleProvider="target">
                                 <rect key="frame" x="287" y="670" width="90" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="mbZ-u4-dN4"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="F0I-lY-eal" appends="YES" id="9OC-ji-XTs"/>
                                 </connections>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MHg-09-TIE" customClass="CustomView" customModule="sf_unit21_hw" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MHg-09-TIE" customClass="CustomView" customModule="sf_unit21_hw" customModuleProvider="target">
                                 <rect key="frame" x="153" y="677" width="90" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -83,13 +84,22 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="3sp-q0-TqB" firstAttribute="leading" secondItem="MHg-09-TIE" secondAttribute="trailing" constant="44" id="EVo-x3-geO"/>
+                            <constraint firstItem="3sp-q0-TqB" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="IIF-io-6Ln"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3sp-q0-TqB" secondAttribute="bottom" constant="58" id="gUK-pX-dam"/>
+                            <constraint firstItem="MHg-09-TIE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="153" id="h3h-tb-xJz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MHg-09-TIE" secondAttribute="bottom" constant="51" id="qaO-zE-fUN"/>
+                            <constraint firstItem="MHg-09-TIE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="677" id="vnF-T7-MeM"/>
+                            <constraint firstItem="3sp-q0-TqB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="670" id="zzo-pK-mfV"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="elementViewFive" destination="sbH-d2-cM6" id="gae-YK-mQt"/>
                         <outlet property="elementViewFour" destination="zOi-JI-pTn" id="O8t-vX-2zJ"/>
                         <outlet property="elementViewOne" destination="SMT-RN-3wH" id="L00-U9-vhQ"/>
                         <outlet property="elementViewSeven" destination="3sp-q0-TqB" id="XGR-Hw-KnM"/>
-                        <outlet property="elementViewSix" destination="MHg-09-TIE" id="bYb-Ef-AhX"/>
+                        <outlet property="elementViewSix" destination="MHg-09-TIE" id="ld6-tv-Tb5"/>
                         <outlet property="elementViewThree" destination="Kes-GY-a1J" id="eFC-Rn-Oq3"/>
                         <outlet property="elementViewTwo" destination="vXs-6b-g1b" id="LaL-yT-uIN"/>
                     </connections>

@@ -71,7 +71,7 @@ class ViewController: UIViewController {
 
                     if capture.x && capture.y{
                         enemyView.doBigger()
-                        enemyView.setBackgroundColor = .systemIndigo
+//                        enemyView.setBackgroundColor = .systemIndigo
                         gestureView.isHidden = true
                         capture.x = false
                         capture.y = false
